@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 80px;
+  margin-left: 100px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: large;
+}
+
+nav a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#Home {
+  display: flex;
+  align-items: center;
+}
+.content-container {
+  margin-top: 100px;
+}
+
+.content-container h1 {
+  font-size: 60px;
+}
+
+.content-container p {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-container a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+}
+#Home {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.image-container {
+  position: relative;
+}
+.girl {
+  position: absolute;
+  /* z-index: 1; */
+  top: -220px;
+}
+.shape {
+  position: absolute;
+  height: 500px;
+  top: -220px;
+}
+
+.image-container img{
+  transition: top 10s,left 5s;
+}
+
+
+.image-container:hover .girl{
+  left: 50px;
+  transition:  2s;
+}
+.image-container:hover .shape{
+  top: -180px;
+}
+
+
+
+#about {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center h1 {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.text-center h3 {
+  color: green;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  margin-top: 50px;
+}
+.about-image img {
+  width: 100%;
+}
+.about-content p {
+  font-weight: 450;
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 50px;
+}
+.about-content h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 100px;
+}
+.basebar {
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  height: 0.8rem;
+  position: absolute;
+  top: 25px;
+}
+#htmlBar {
+  background-color: orange;
+  width: 89%;
+  position: absolute;
+}
+#ReactBar {
+  background-color: orange;
+  width: 70%;
+  position: absolute;
+}
+#jsBar {
+  background-color: orange;
+  width: 93%;
+  position: absolute;
+}
+#cssBar {
+  background-color: orange;
+  width: 79%;
+  position: absolute;
+}
+
+.icons {
+  margin-top: 15px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.icons i {
+  color: black;
+}
+.anim {
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.anim:hover {
+  background-image: linear-gradient(red, yellow, green);
+}
+
+.anim:hover i {
+  color: #ffffff;
+  animation: rotate 5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  40% {
+    transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(246, 234, 211);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: orange;
+  border-radius: 10px;
+}
